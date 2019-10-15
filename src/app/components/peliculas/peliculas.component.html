@@ -1,41 +1,14 @@
 <div class="card-columns m-5">
-  <div class="card">
-    <!--img src="..." class="card-img-top" alt="..."-->
-    <div class="card-body">
-      <h5 class="card-title">Pelicula</h5>
-        <p class="card-text">Nombre Pelicula 1</p>
-      <hr>
-      <h5 class="card-title">Director</h5>
-        <p class="card-text">Nombre Director 1</p>
-      <hr>
-      <h5 class="card-title">Productor</h5>
-        <p class="card-text">Nombre Prodcutor 1</p>
+    <div class="card" *ngFor='let film of peliculas'>
+      <div class="card-body">
+        <h5 class="card-title">Pelicula</h5>
+          <p class="card-text">{{ film.title | uppercase }}</p>
+        <hr>
+        <h5 class="card-title">Director</h5>
+          <p class="card-text">{{ film.director | uppercase }}</p>
+        <hr>
+        <h5 class="card-title">Productor</h5>
+          <p class="card-text">{{ film.producer | uppercase }}</p>
+      </div>
     </div>
   </div>
-  <div class="card">
-  <!--img src="..." class="card-img-top" alt="..."-->
-    <div class="card-body">
-      <h5 class="card-title">Pelicula</h5>
-          <p class="card-text">Nombre Pelicula 2</p>
-          <hr>
-          <h5 class="card-title">Director</h5>
-            <p class="card-text">Nombre Director 2</p>
-          <hr>
-          <h5 class="card-title">Productor</h5>
-            <p class="card-text">Nombre Prodcutor 2</p>
-    </div>
-  </div>
-  <div class="card">
-  <!--img src="..." class="card-img-top" alt="..."-->
-    <div class="card-body">
-      <h5 class="card-title">Pelicula</h5>
-      <p class="card-text">Nombre Pelicula 3</p>
-      <hr>
-      <h5 class="card-title">Director</h5>
-        <p class="card-text">Nombre Director 3</p>
-      <hr>
-      <h5 class="card-title">Productor</h5>
-        <p class="card-text">Nombre Prodcutor 3</p>
-    </div>
-  </div>
-</div>
